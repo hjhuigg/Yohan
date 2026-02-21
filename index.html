@@ -6,169 +6,317 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
-  <title>Yohan portfolio</title>
+  <title>Yohan | Full Stack Developer</title>
 </head>
 
 <body>
+  <!-- Header -->
   <header>
-    <h1 class="logo">Yohan</h1>
+    <div class="logo">Yohan</div>
     <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
     <label for="menu-toggle" class="menu-toggle">
       <span></span>
       <span></span>
       <span></span>
     </label>
-
     <nav>
-      <a class="Home" href="#Home">Home</a>
+      <a href="#Home" class="active">Home</a>
       <a href="#About">About</a>
       <a href="#Skills">Skills</a>
-      <a href="#Contact">Contact</a>
+      <a href="#Projects">Projects</a>
     </nav>
   </header>
-  
-  <section class="home" id="Home">
-    <div class="home-text">
-      <h1>WELCOME, I'M Yohan</h1>
-      <h3>I'M A PROGRAMMER WITH 5 YEARS OF EXPERIENCE</h3>
-      <p>I work as a web, app, and Ai, (soon) Robots</p>
-      <div class="typing-text"></div>
-      <div class="social-icons">
-        <a href="https://discord.com/users/_7j" target="_blank"><i class="fa-brands fa-discord"></i></a>
-      </div>    
+
+  <!-- Home Section -->
+  <section id="Home" class="home">
+    <div class="home-content">
+      <div class="text-content">
+        <span class="greeting">Hello, I'm</span>
+        <h1>Yohan</h1>
+        <h2>Full Stack Developer</h2>
+        <p>Turning complex problems into simple, elegant solutions</p>
+        <div class="cta-buttons">
+          <a href="#Projects" class="btn primary">View My Work</a>
+          <a href="#About" class="btn secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <div class="profile-image">
+          <img src="profile.png" alt="Yohan">
+        </div>
+      </div>
     </div>
-    <img src="profile.png" alt="Profile Image">
+    <div class="scroll-indicator">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </section>
 
-  <!-- Section About -->
-  <section id="About" class="about-section">
-    <div class="about-container">
-      <div class="about-image">
-        <img src="profile.png" alt="Yohan">
+  <!-- About Section -->
+  <section id="About" class="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Who I Am</span>
+        <h2>About Me</h2>
       </div>
       <div class="about-content">
-        <h2>About Me</h2>
-        <p>
-          I’m <strong>Yohan</strong> a passionate Full Stack Developer I love creating 
-          beautiful functional and responsive web experiences My focus is on clean code 
-          creative design and fast performance
-        </p>
-        <p>
-          When I’m not coding I enjoy learning new technologies exploring design trends
-          and enhancing my skills to deliver top-notch projects
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Skills -->
-  <section id="Skills" class="skills-section">
-    <div class="skills-container">
-      <h2>My Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Node.js</h3>
-          <div class="skill-bar">
-            <div class="skill-progress" style="--progress: 100%"></div>
+        <div class="about-text">
+          <p>I'm a passionate Full Stack Developer with over 5 years of experience in creating innovative web solutions. My journey in tech started with a curiosity for how things work, which evolved into a deep love for coding and problem-solving.</p>
+          <p>I specialize in building responsive, user-friendly applications that not only look great but perform exceptionally well. Whether it's frontend aesthetics or backend architecture, I approach every project with the same dedication to quality and excellence.</p>
+          <div class="personal-info">
+            <div class="info-item">
+              <span class="info-title">Name:</span>
+              <span class="info-value">Yohan</span>
+            </div>
+            <div class="info-item">
+              <span class="info-title">Experience:</span>
+              <span class="info-value">5+ Years</span>
+            </div>
+            <div class="info-item">
+              <span class="info-title">Location:</span>
+              <span class="info-value">Remote / Worldwide</span>
+            </div>
+            <div class="info-item">
+              <span class="info-title">Availability:</span>
+              <span class="info-value">Full Time</span>
+            </div>
           </div>
         </div>
-        <div class="skill-card">
-          <h3>HTML</h3>
-          <div class="skill-bar">
-            <div class="skill-progress" style="--progress: 100%"></div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Projects Completed</div>
           </div>
-        </div>
-        <div class="skill-card">
-          <h3>CSS</h3>
-          <div class="skill-bar">
-            <div class="skill-progress" style="--progress: 100%"></div>
+          <div class="stat-card">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Years Experience</div>
           </div>
-        </div>
-        <div class="skill-card">
-          <h3>React.js</h3>
-          <div class="skill-bar">
-            <div class="skill-progress" style="--progress: 97%"></div>
+          <div class="stat-card">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Happy Clients</div>
           </div>
-        </div>
-        <div class="skill-card">
-          <h3>JavaScript</h3>
-          <div class="skill-bar">
-            <div class="skill-progress" style="--progress: 99%"></div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h3>Nest.js</h3>
-          <div class="skill-bar">
-            <div class="skill-progress" style="--progress: 96%"></div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h3>Next.js</h3>
-          <div class="skill-bar">
-            <div class="skill-progress" style="--progress: 88%"></div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h3>Python</h3>
-          <div class="skill-bar">
-            <div class="skill-progress" style="--progress: 100%"></div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h3>C++</h3>
-          <div class="skill-bar">
-            <div class="skill-progress" style="--progress: 80%"></div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h3>PHP</h3>
-          <div class="skill-bar">
-            <div class="skill-progress" style="--progress: 80%"></div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h3>Express.js</h3>
-          <div class="skill-bar">
-            <div class="skill-progress" style="--progress: 80%"></div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h3>Java</h3>
-          <div class="skill-bar">
-            <div class="skilled" style="--progress: 80%"></div>
+          <div class="stat-card">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Lines of Code</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section Contact -->
-  <section id="Contact" class="contact-section">
+  <!-- Skills Section -->
+  <section id="Skills" class="skills">
     <div class="container">
-      <h2>Contact Me</h2>
-      <p>Let's get in touch! I am available via email or Discord.</p>
-      <div class="contact-cards">
-        <div class="contact-card">
-          <h3>Email Me</h3>
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="">
-            <input type="hidden" name="subject" value="New Contact Form Submission">
-            <input type="hidden" name="redirect">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Email</button>
-          </form>
+      <div class="section-header">
+        <span class="section-subtitle">What I Do Best</span>
+        <h2>My Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HTML5</span>
+                <span>100%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>CSS3</span>
+                <span>100%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span>99%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 99%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>React.js</span>
+                <span>97%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 97%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Next.js</span>
+                <span>88%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 88%"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact-card">
-          <h3>Discord</h3>
-          <p>Send me a message directly on Discord:</p>
-          <a href="https://discord.com/users/_7j" target="_blank" class="discord-btn">
-            <i class="fa-brands fa-discord"></i> Message me on Discord
-          </a>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Node.js</span>
+                <span>100%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Python</span>
+                <span>100%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Express.js</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>PHP</span>
+                <span>80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Java</span>
+                <span>80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Databases & Tools</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>MongoDB</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>MySQL</span>
+                <span>85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Git</span>
+                <span>95%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Docker</span>
+                <span>75%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Projects Section (New) -->
+  <section id="Projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">My Work</span>
+        <h2>Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/400x250" alt="Project 1">
+          </div>
+          <div class="project-info">
+            <h3>AI-Powered Dashboard</h3>
+            <p>A comprehensive dashboard with AI-driven analytics and real-time data visualization</p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/400x250" alt="Project 2">
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Platform</h3>
+            <p>Full-featured e-commerce solution with payment integration and inventory management</p>
+            <div class="project-tags">
+              <span>Next.js</span>
+              <span>Express</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/400x250" alt="Project 3">
+          </div>
+          <div class="project-info">
+            <h3>Task Management App</h3>
+            <p>Collaborative task management tool with real-time updates and team features</p>
+            <div class="project-tags">
+              <span>Vue.js</span>
+              <span>Firebase</span>
+              <span>Tailwind</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (No Contact Info) -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Yohan. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
